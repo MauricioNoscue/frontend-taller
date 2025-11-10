@@ -1,1 +1,6 @@
-<p>consultoring works!</p>
+<app-generic-table
+  [dataSource]="dataSource"
+  [columns]="columns"
+  [columnDefs]="columnDefs"
+  (actionClicked)="onAction($event)">
+</app-generic-table>
