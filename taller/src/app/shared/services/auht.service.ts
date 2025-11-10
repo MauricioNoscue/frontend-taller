@@ -27,7 +27,7 @@ export interface LoginResponseDto {
 })
 export class AuthService {
 
-  private readonly baseUrl = `${environment.apiUrl}/auth`;
+  private readonly baseUrl = `${environment.apiUrl}/v1/auth`;
 
   constructor(private readonly http: HttpClient) {}
 
