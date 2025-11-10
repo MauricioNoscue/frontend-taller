@@ -1,5 +1,15 @@
+<app-toolbar-section
+  title="Consultorios"
+  addLabel="Agregar"
+  addSubtitle="nuevo"
+  [data]="dataSource"
+  [searchFields]="['name', 'roomNumber']"
+  (onAdd)="crear()"
+  (filteredData)="dataSourceFiltered = $event">
+</app-toolbar-section>
+
 <app-generic-table
-  [dataSource]="dataSource"
+  [dataSource]="dataSourceFiltered" 
   [columns]="columns"
   [columnDefs]="columnDefs"
   (actionClicked)="onAction($event)">

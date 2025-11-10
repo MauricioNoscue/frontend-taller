@@ -11,7 +11,7 @@ export class SidebarComponent {
   // 🔹 Menú principal: puedes personalizar fácilmente
   menuItems = [
     { icon: 'dashboard', label: 'Dashboard', route: '/appointments' },
-    { icon: 'event', label: 'Citas', route: '/appointments/consultorio' },
+    { icon: 'event', label: 'Consultorios', route: '/appointments/consultorio' },
     { icon: 'person', label: 'Usuarios', route: '/appointments/doctors' },
     { icon: 'settings', label: 'Configuración', route: '/settings' }
   ];

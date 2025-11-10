@@ -7,10 +7,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ToolbarComponent } from './components/layout/toolbar/toolbar.component';
 import { MainLayoutComponent } from './components/layout/main-layout/main-layout.component';
+import { ToolbarSectionComponent } from './components/toolbar-section/toolbar-section.component';
 
 const sharedComponents =[
 
-  GenericTableComponent,SidebarComponent,ToolbarComponent,MainLayoutComponent
+  GenericTableComponent,SidebarComponent,ToolbarComponent,MainLayoutComponent,ToolbarSectionComponent
 ];
 
 @NgModule({
