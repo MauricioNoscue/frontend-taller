@@ -1,6 +1,6 @@
 <h2 mat-dialog-title>{{ title }}</h2>
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()" mat-dialog-content class="form-container">
+<form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()" mat-dialog-content class="form-container">
   <div *ngFor="let field of fields" class="form-field">
 
     <!-- 🔹 Texto / Número -->

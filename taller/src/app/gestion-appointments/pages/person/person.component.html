@@ -1,9 +1,9 @@
 <app-toolbar-section
-  title="Doctores"
+  title="Personas"
   addLabel="Agregar"
-  addSubtitle="nuevo"
+  addSubtitle="nuevo registro"
   [data]="dataSource"
-  [searchFields]="['fullName', 'specialtyName', 'emailDoctor']"
+  [searchFields]="['firstName', 'lastName', 'identification', 'phoneNumber']"
   (onAdd)="crear()"
   (filteredData)="dataSourceFiltered = $event">
 </app-toolbar-section>

@@ -12,8 +12,12 @@ export class SidebarComponent {
   menuItems = [
     { icon: 'dashboard', label: 'Dashboard', route: '/appointments' },
     { icon: 'event', label: 'Consultorios', route: '/appointments/consultorio' },
-    { icon: 'person', label: 'Usuarios', route: '/appointments/doctors' },
-    { icon: 'settings', label: 'Configuración', route: '/settings' }
+    { icon: 'person', label: 'personas', route: '/appointments/person' },
+    { icon: 'settings', label: 'Especialidades', route: '/appointments/especialidades' },
+    { icon: 'settings', label: 'Doctores', route: '/appointments/doctors' },
+    { icon: 'settings', label: 'Tipos de citas', route: '/appointments/tCitas' },
+
+
   ];
 
   // 🔹 Puedes manejar el estado del sidenav si lo integras con layout responsive
