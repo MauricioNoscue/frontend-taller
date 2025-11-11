@@ -9,16 +9,17 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
 
   // 🔹 Menú principal: puedes personalizar fácilmente
-  menuItems = [
-    { icon: 'dashboard', label: 'Dashboard', route: '/appointments' },
-    { icon: 'event', label: 'Consultorios', route: '/appointments/consultorio' },
-    { icon: 'person', label: 'personas', route: '/appointments/person' },
-    { icon: 'settings', label: 'Especialidades', route: '/appointments/especialidades' },
-    { icon: 'settings', label: 'Doctores', route: '/appointments/doctors' },
-    { icon: 'settings', label: 'Tipos de citas', route: '/appointments/tCitas' },
+menuItems = [
+  { icon: 'dashboard', label: 'Dashboard', route: '/appointments/Dashboard' },
+  { icon: 'meeting_room', label: 'Consultorios', route: '/appointments/consultorio' },
+  { icon: 'group', label: 'Personas', route: '/appointments/person' },
+  { icon: 'medical_services', label: 'Especialidades', route: '/appointments/especialidades' },
+  { icon: 'local_hospital', label: 'Doctores', route: '/appointments/doctors' },
+  { icon: 'event_note', label: 'Tipos de Citas', route: '/appointments/tCitas' },
+  { icon: 'schedule', label: 'Horarios', route: '/appointments/horarios' },
+  { icon: 'manage_accounts', label: 'Usuarios', route: '/appointments/users' },
+];
 
-
-  ];
 
   // 🔹 Puedes manejar el estado del sidenav si lo integras con layout responsive
   isOpen = true;

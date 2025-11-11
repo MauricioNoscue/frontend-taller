@@ -1,9 +1,9 @@
 <app-toolbar-section
-  title="Tipos de Cita"
+  title="Horarios"
   addLabel="Agregar"
   addSubtitle="nuevo"
   [data]="dataSource"
-  [searchFields]="['name', 'description', 'icon']"
+  [searchFields]="['typeCitationName', 'nameDoctor', 'consultingRoomName']"
   (onAdd)="crear()"
   (filteredData)="dataSourceFiltered = $event">
 </app-toolbar-section>

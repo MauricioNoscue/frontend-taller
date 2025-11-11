@@ -6,6 +6,9 @@ import { DoctorsComponent } from './pages/doctors/doctors.component';
 import { PersonComponent } from './pages/person/person.component';
 import { SpecialtyComponent } from './pages/specialty/specialty.component';
 import { TypeCitationComponent } from './pages/type-citation/type-citation.component';
+import { SheduleComponent } from './pages/shedule/shedule.component';
+import { UserComponent } from './pages/user/user.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
 
@@ -13,12 +16,20 @@ const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: '', component: ConsultoringComponent },
+      { path: '', component: DashboardComponent },
       { path: 'consultorio', component: ConsultoringComponent },
       { path: 'doctors', component: DoctorsComponent },
       { path: 'person', component: PersonComponent },
       { path: 'especialidades', component: SpecialtyComponent },
       { path: 'tCitas', component: TypeCitationComponent },
+      { path: 'horarios', component: SheduleComponent },
+      { path: 'users', component: UserComponent },
+      { path: 'users', component: UserComponent },
+      { path: 'Dashboard', component: DashboardComponent },
+
+
+
+
 
 
       

@@ -8,10 +8,20 @@ import { ConsultoringComponent } from './pages/consultoring/consultoring.compone
 import { PersonComponent } from './pages/person/person.component';
 import { SpecialtyComponent } from './pages/specialty/specialty.component';
 import { DoctorsComponent } from './pages/doctors/doctors.component';
+import { TypeCitationComponent } from './pages/type-citation/type-citation.component';
+import { SheduleComponent } from './pages/shedule/shedule.component';
+import { UserComponent } from './pages/user/user.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 @NgModule({
-  declarations: [ConsultoringComponent,PersonComponent,SpecialtyComponent,DoctorsComponent],
+  declarations: [ConsultoringComponent,
+    PersonComponent,SpecialtyComponent
+    ,DoctorsComponent
+    ,TypeCitationComponent,
+    SheduleComponent,UserComponent,
+    DashboardComponent
+  ],
   imports: [
     CommonModule,
     GestionAppointmentsRoutingModule,MaterialModule,SharedModule
